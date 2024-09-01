@@ -1,6 +1,6 @@
 # bmi-example-cxx-docker
 
-The [C++ example](https://github.com/csdms/bmi-example-c)
+The [C++ example](https://github.com/csdms/bmi-example-cxx)
 for the [Basic Model Interface](https://bmi.readthedocs.io),
 dockerized.
 
