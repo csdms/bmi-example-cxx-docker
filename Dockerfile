@@ -14,6 +14,7 @@ WORKDIR ${prefix}/_build
 RUN cmake .. -DCMAKE_INSTALL_PREFIX=${CONDA_DIR} && \
     make && \
     make test && \
-    make install
+    make install && \
+    make clean
 
 WORKDIR /opt
