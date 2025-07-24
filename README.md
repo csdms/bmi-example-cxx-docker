@@ -12,9 +12,9 @@ docker build --tag bmi-example-cxx .
 ```
 The image is based on the [csdms/bmi](https://hub.docker.com/r/csdms/bmi) image.
 The OS is Linux/Ubuntu.
-`conda` and `mamba` are installed in `CONDA_DIR=/opt/conda`,
+`conda` is installed in `CONDA_DIR=/opt/conda`,
 and the *base* environment is activated.
-The C++ BMI specification and example, including the `run_bmiheatc` executable, are installed into it.
+The C++ BMI mapping and example, including the `run_bmiheatcxx` executable, are installed into it.
 
 ## Run a container
 
