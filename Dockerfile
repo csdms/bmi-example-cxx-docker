@@ -5,11 +5,11 @@ LABEL author="Mark Piper"
 LABEL email="mark.piper@colorado.edu"
 
 ENV base_url=https://github.com/csdms
-ENV package=bmi-example-cxx
+ENV project=bmi-example-cxx
 ENV version="2.1.3"
-ENV prefix=/opt/${package}
+ENV prefix=/opt/${project}
 
-RUN git clone --branch v${version} ${base_url}/${package} ${prefix}
+RUN git clone --branch v${version} ${base_url}/${project} ${prefix}
 WORKDIR ${prefix}/_build
 RUN cmake .. -DCMAKE_INSTALL_PREFIX=${CONDA_DIR} && \
     make && \
